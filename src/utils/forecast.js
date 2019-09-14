@@ -1,6 +1,8 @@
 const request = require('request')
 
 const forecast = (latitude, longitude, callback) => {
+    
+    const url = 'Put your api url'
 
     request({url, json: true}, (error, {body})=>{
         if(error){
