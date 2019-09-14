@@ -2,6 +2,9 @@ const request = require('request')
 
 const geocode = (address, callback) => {
 
+        const url = 'Put your api url'
+
+
     request({url, json:true}, (error, {body})=>{
         if(error){
             callback('Unable to fetch the location Services', undefined)
