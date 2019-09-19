@@ -2,7 +2,7 @@ const request = require('request')
 
 const geocode = (address, callback) => {
 
-        const url = 'Put your api url'
+        const url = 'Put your api url' + encodeURIComponent(address) +  '.json?access_token=Your access token'
 
 
     request({url, json:true}, (error, {body})=>{
